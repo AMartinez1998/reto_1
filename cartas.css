@@ -1,0 +1,40 @@
+.tablero {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  gap: 10px;
+  margin: 200px auto;
+}
+
+.carta {
+  width: 90px;
+  height: 120px;
+  perspective: 1000px;
+  cursor: pointer;
+  position: relative;
+}
+
+.frente, .atras {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+}
+
+.frente {
+  background-color: aqua;
+}
+
+.atras {
+  transform: rotateY(180deg);
+}
+
+.carta.volteada .frente {
+  transform: rotateY(180deg);
+}
+
+.carta.volteada .atras {
+  transform: rotateY(0deg);
+}
