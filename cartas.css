@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   width: 600px;
   gap: 10px;
-  margin: 200px auto;
+  margin: 100px auto;
 }
 
 .carta {
@@ -37,4 +37,13 @@
 
 .carta.volteada .atras {
   transform: rotateY(0deg);
+}
+
+h1{
+  margin: 50px auto;
+  width: 650px;
+}
+.adivinanza{
+   margin: 50px auto;
+   width: 450px;
 }
